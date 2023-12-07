@@ -10,7 +10,7 @@ terraform {
 }
 provider "azurerm" {
   features {}
-   subscription_id = "8da7f9ab-477a-4b2a-bb3c-3ac96f300e57"
+   subscription_id = "03187794-99b7-459c-bd82-fc02816176e8"
    tenant_id = "686c7545-fe4e-4435-9c59-a1047fcb1bb1"
 }
 
@@ -23,7 +23,7 @@ resource "random_integer" "ri" {
 # Create the resource group
 resource "azurerm_resource_group" "rg" {
   name     = "myResourceGroup-${random_integer.ri.result}"
-  location = "eastus"
+  location = "centralindia"
 }
 
 # Create the Linux App Service Plan
